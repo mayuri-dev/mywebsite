@@ -118,6 +118,20 @@ body {
     body {
       padding: 5em 1.25em 1.25em 1.25em; } }
 
+      @-webkit-keyframes typing { from { width: 0; } }
+      @-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+      
+      h1 { 
+        font: bold 300% Roboto, monospace;
+        border-right: .1em solid rgb(0, 0, 0);
+        width: 10em; 
+        width: 10.5ch;
+        margin: 2em 1em;
+        white-space: nowrap;
+        overflow: hidden;
+        -webkit-animation: typing 0.8s steps(15, end),
+                   blink-caret .4s step-end infinite alternate;
+      }
 /* BG */
 #bg {
   -moz-transition: opacity 2s ease-in-out;
