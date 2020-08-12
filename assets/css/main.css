@@ -829,7 +829,51 @@ button,
         line-height: inherit;
         margin-top: 0;
         position: absolute; } }
-
+        @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+        body{
+          padding: 40px;
+          background-color: #121212;  
+        }
+        
+        #parent {
+          height: 60px;
+          white-space: nowrap;
+          overflow: hidden; 
+          font-family: 'Roboto', monospace;  
+          font-size: 35px;
+          color: rgba(255,255,255,.70);
+          position: relative;
+        }
+        
+        #border {
+          border-bottom: solid 3px rgba(0,255,0,.75);
+          position: absolute;
+          right: -7px;
+          width: 20px;
+        }
+        
+        /* Animation */
+        #parent {
+          animation: animated-text 2s steps(30,end) 1s 1 normal both
+        }
+        
+        #border {
+           animation: animated-cursor 700ms steps(30,end) infinite;
+        }
+        
+        /* text animation */
+        
+        @keyframes animated-text{
+          from{width: 0;}
+          to{width: 1075px;}
+        }
+        
+        /* cursor animations */
+        
+        @keyframes animated-cursor{
+          from{border-bottom-color: rgba(0,255,0,.75);}
+          to{border-bottom-color: transparent;}
+        }
 /* Footer */
 #footer {
   -moz-transition: opacity 0.5s ease-in-out;
