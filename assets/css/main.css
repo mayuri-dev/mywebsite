@@ -129,7 +129,7 @@ body {
         margin: 2em 1em;
         white-space: nowrap;
         overflow: hidden;
-        -webkit-animation: typing 2s steps(15, end),
+        -webkit-animation: typing 2s steps(20, end),
                    blink-caret .4s step-end infinite alternate;
       }
 /* BG */
