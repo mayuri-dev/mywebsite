@@ -56,7 +56,7 @@
 			} else if (this.isDeleting && this.txt === '') {
 			  this.isDeleting = false;
 			  this.loopNum++;
-			  delta = 400;
+			  delta = 350;
 			}
 		  
 			setTimeout(function() {
