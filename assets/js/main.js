@@ -76,7 +76,7 @@
 			// INJECT CSS
 			var css = document.createElement("style");
 			css.type = "text/css";
-			css.innerHTML = ".txt-rotate > .wrap { border-right: 0.15em solid #000 }";
+			css.innerHTML = ".txt-rotate > .wrap { border-right: 0.15em solid #1cb495 }";
 			document.body.appendChild(css);
 		  };
 	// Slideshow Background.
