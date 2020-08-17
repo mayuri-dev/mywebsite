@@ -27,7 +27,7 @@
 			this.toRotate = toRotate;
 			this.el = el;
 			this.loopNum = 0;
-			this.period = parseInt(period, 10) || 2000;
+			this.period = parseInt(period, 9) || 2000;
 			this.txt = '';
 			this.tick();
 			this.isDeleting = false;
@@ -56,7 +56,7 @@
 			} else if (this.isDeleting && this.txt === '') {
 			  this.isDeleting = false;
 			  this.loopNum++;
-			  delta = 350;
+			  delta = 100;
 			}
 		  
 			setTimeout(function() {
