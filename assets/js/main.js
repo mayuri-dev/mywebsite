@@ -163,7 +163,8 @@
             setTimeout(() => {
                 cursor.classList.remove("expand");
             }, 500)
-        })
+		})
+		
 	// Signup Form.
 		(function() {
 
