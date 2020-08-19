@@ -80,22 +80,23 @@
 			document.body.appendChild(css);
 		  };
 	// Slideshow Background.
-		(function() {
+	(function() {
 
-			// Settings.
-				var settings = {
+		// Settings.
+			var settings = {
 
-					// Images (in the format of 'url': 'alignment').
-						images: {
-							'images/bg01.jpg': 'center',
-							'images/bg02.jpg': 'center',
-							'images/bg03.jpg': 'center'
-						},
+				// Images (in the format of 'url': 'alignment').
+					images: {
+						'images/bg01.jpg': 'center',
+						'images/bg02.jpg': 'center',
+						'images/bg03.jpg': 'center'
+					},
 
-					// Delay.
-						delay: 4000
+				// Delay.
+					delay: 4000
 
-				};
+			};
+		
 
 			// Vars.
 				var	pos = 0, lastPos = 0,

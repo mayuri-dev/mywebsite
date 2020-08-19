@@ -14,7 +14,7 @@
 		<meta name="description" content="Dylan Iskandar | Full Stack Software Developer. Concert Pianist/Guitarist. Mira Costa High School." />
 		<meta name="author" content="Dylan Iskandar" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -44,7 +44,15 @@
 					<li>&copy; 2020 Dylan Iskandar</li>
 				</ul>
 			</footer>
-
+			<body class="is-preload">
+				<div class="loader-wrapper">
+					<span class="loader"><span class="loader-inner"></span></span>
+				</div>
+				<script>
+					$(window).on("load",function(){
+			 $(".loader-wrapper").fadeOut("slow");
+		});
+				</script>
 		
 			<script src="assets/js/main.js"></script>
 			<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -57,9 +65,6 @@
   gtag('config', 'UA-175450498-1');
 </script>
 
-			
-
-    
 <script type="text/javascript">
 	if (screen.width <= 699) {
 	document.location = "mobile.html";
