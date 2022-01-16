@@ -63,6 +63,22 @@
 	}
 	</script>
 	<script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt=""/></noscript
+<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt=""/></noscript>
+<script>
+    async function onLoad() {
+        let response = await fetch("https://uni.pratishrai.workers.dev")
+            .then(async (resp) => { 
+                if (resp.ok) return `${(await resp.text())}`;
+                else return "no uni";
+            })
+            .catch(err => `something went wrong ${err}`);
+    }
+    
+    if (document.readyState != 'loading'){
+        onLoad();
+    } else {
+        document.addEventListener('DOMContentLoaded', onLoad);
+    }
+    </script>
 	</body>
 </html>
